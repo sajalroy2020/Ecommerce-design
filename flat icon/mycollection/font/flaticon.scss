@@ -1,0 +1,37 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?95fa7a415ac7a4064c7cce38900baa60") format("truetype"),
+url("./flaticon.woff?95fa7a415ac7a4064c7cce38900baa60") format("woff"),
+url("./flaticon.woff2?95fa7a415ac7a4064c7cce38900baa60") format("woff2"),
+url("./flaticon.eot?95fa7a415ac7a4064c7cce38900baa60#iefix") format("embedded-opentype"),
+url("./flaticon.svg?95fa7a415ac7a4064c7cce38900baa60#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "facebook-1": "\f101",
+    "facebook": "\f102",
+    "facebook-app-symbol": "\f103",
+);
+
+.flaticon-facebook-1:before {
+    content: map-get($flaticon-map, "facebook-1");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon-map, "facebook-app-symbol");
+}
